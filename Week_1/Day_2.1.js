@@ -121,6 +121,8 @@ function helloWorld() {
 // First Pass - function declaration is hoisted, then our var x is hoisted, but without value
 // Second Pass - this time var x is assigned a value, then we call our function declaration
 
+// *******************************************************************************************************
+
 /* If Hoisting still not clear, go to Day_2.2.js for a mini lesson on Hoisting. */
 /* Review Terminal Navigation and Git Commands */
 /* ASSIGN TERMINAL DUNGEON */

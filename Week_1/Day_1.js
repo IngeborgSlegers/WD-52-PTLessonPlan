@@ -69,4 +69,10 @@ if (typeof value === 'string') {
   console.log('What are you?!')
 }
 
-/* ! ASSIGN TERMINAL DUNGEON */
+/* ! 
+  ASSIGN TERMINAL DUNGEON 
+  https://github.com/maynardz/terminal_dungeon
+
+  git clone
+  
+*/
