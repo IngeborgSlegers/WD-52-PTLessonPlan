@@ -1,13 +1,25 @@
+
+
+// ****** CLASS ANNOUNCEMENT ********
+
+// WEEK 2 VIDEOS UNLOCK TONIGHT. THE VIDEOS THAT WERE SCHEDULED FOR THURSDAY ARE NOW DUE ON SATURDAY (MAY 30TH)
+
+
+// ****** CHALLENGES ********
+
 /**************************
-WHITEBOARD 1 - FIZZ BUZZ (Conditionals Only)
+FIZZ BUZZ (Conditionals Only)
 **************************/
 /*
 Challenge:
+
 Create a variable named FB that takes numbers
 Write a conditional that: 
 Prints out "Fizz" if the number is divisible by 3
 Prints out "Buzz" if the number is divisible by 5
 Prints out "Fizz Buzz" if the number is divisible by BOTH 3 and 5
+
+Convert this to TERNARY and then a SWITCH
 */
 
 let FB = 15;
@@ -67,6 +79,9 @@ function scope() {
 scope();
 console.log(x)
 // ANSWER---> "Hello" , "Hello", "Cory"
+// Global Scope for x is "Cory". Inside the function code block ( curly {} braces) a new variable( same name, different variable) is declared and initialized (var key word). Inside of the function we have a conditional that checks if the statement inside the parenthesis are true, we go inside the block. Since this statement is true, inside the block, we declare and initialize the variable AGAIN. Inside this block, when we console.log() x, JS assumes were refering to the x inside the block with us. 
+
+
 // CHALLENGE SCOPE 2
 //What can you do to change the output to be "Hello" "world" "Cory"
 //explain why?
@@ -83,6 +98,8 @@ function scope() {
 scope();
 console.log(x)
 // ANSWER  ----> var does not respect block scope, let DOES respect block scope
+
+
 // CHALLENGE HOIST
 //Can you determine the order of hoisting?
 //Still in progress
@@ -105,6 +122,8 @@ function helloWorld() {
 // First Pass - function declaration is hoisted, then our var x is hoisted, but without value
 // Second Pass - function is called, but because our function is called before the variable x is assigned a value we get undefined.
 
+// In this scenario, the function is 'hoisted' and remembered the first time javascript passes over, its keeping the entire function stored in memory. So even though its being called before the function is actually declared.
+
 // 7. Can you rearrange the code to get the output "Hello World Cory"
 helloWorld();
 var x = "Cory";
@@ -124,5 +143,7 @@ function helloWorld() {
 // *******************************************************************************************************
 
 /* If Hoisting still not clear, go to Day_2.2.js for a mini lesson on Hoisting. */
-/* Review Terminal Navigation and Git Commands */
-/* ASSIGN TERMINAL DUNGEON */
+
+/*
+  ASSIGN STATIC LAYOUT (DUE SAT MAY 30th)
+*/

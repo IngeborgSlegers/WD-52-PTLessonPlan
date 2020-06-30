@@ -70,9 +70,11 @@ if (typeof value === 'string') {
 }
 
 /* ! 
+  Review Terminal Navigation and Git Commands 
+  
   ASSIGN TERMINAL DUNGEON 
   https://github.com/maynardz/terminal_dungeon
 
-  git clone
+  Walk the class through cloning the repo
   
 */

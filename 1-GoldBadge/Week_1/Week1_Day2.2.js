@@ -1,6 +1,6 @@
 //HOISTING MINI LESSON
 
-/* All declarations (function, var, let, const and class) are hoisted in JavaScript, while the var declarations are initialized with undefined , but let and const declarations remain uninitialized. They will only get initialized when their lexical binding (assignment) is evaluated during runtime by the JavaScript engine. */
+/* All declarations (function, var, let, const and class) are hoisted in JavaScript, while the var declarations are initialized with undefined, let and const declarations remain uninitialized. They will only get initialized when their lexical binding (assignment) is evaluated during runtime by the JavaScript engine. */
 
 //Two steps JS goes through. The first is storing things in memory. Functions are stored in memory in their entirety. Var only stores declaration. 
 //Next the code is executed. This is when assignment operators are used to give value to declared var. 
@@ -24,10 +24,12 @@ function sayHi() {
 let myVar = 1;
 
 function b() {
+  console.log('function b')
   console.log(myVar);
 }
 
 function a() {
+  console.log('function a')
   let myVar = 2;
   b();
 }
@@ -37,28 +39,30 @@ a();
 
 
 function a() {
-
+  console.log('function a')
   function b() {
+    console.log('function b')
     console.log(myVar);
   }
 
   let myVar = 2;
-  b();
+  // b();
 }
 
 let myVar = 1;
 a();
 
-// b();   This will not work because function b() is inside a() and global does not have access to it
+b();     //This will not work because function b() is inside a() and global does not have access to it. We can simply change the location of the invocation so that scope changes.
 
 
 
 
 function a() {
-  console.log(myVar);
+  console.log('myVar in function a', myVar);
 
   function b() {
     let myVar = 2;
+    console.log('myVar in function b', myVar);
   }
 
   b();
@@ -68,11 +72,14 @@ function a() {
 a();
 
 
-//Let uses Block scoping so the above will not work
-//'Blocks' are defined by curly braces (in functions, for loops etc)
-//Can shift myVar into a() from b() and it will work
+// Let uses Block scoping so the above will not work
+// 'Blocks' are defined by curly braces (in functions, for loops etc)
+// Can shift myVar into a() from b() and it will work or create a GLOBAL myVar;
 
 
 
 
 // https://www.w3schools.com/js/js_let.asp
+
+// IF ENOUGH TIME LEFT, GO TO DAY_2.3.js for extra challenges.
+// GO BACK TO DAY_2.1.js
